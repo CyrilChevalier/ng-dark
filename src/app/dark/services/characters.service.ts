@@ -6,7 +6,14 @@ const MAIN_CHARACTER: Character = {
 
     name: 'Hero',
     lifepoint: 15,
-    attack: 5
+    attacks: [
+      {
+        cooldown: 500,
+        startDuration: 150,
+        name: 'Epée',
+        attack: 5
+      }
+    ]
 
 }
 

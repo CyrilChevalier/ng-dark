@@ -3,8 +3,30 @@ import { Character } from '../models/characters.model';
 import { Observable, of } from 'rxjs';
 
 const MONSTERS: Character[] = [
-  { name: "Araignée géante", lifepoint: 10, attack: 2 },
-  { name: "Rat géant", lifepoint: 12, attack: 1}
+  {
+    name: "Mygale des marais",
+    lifepoint: 34,
+    attacks: [
+      {
+        name: "Morsure",
+        cooldown: 1000,
+        startDuration: 500,
+        attack: 8
+      }
+    ]
+  },
+  {
+    name: "Rat géant",
+    lifepoint: 28,
+    attacks: [
+      {
+        name: "Coup de griffes",
+        cooldown: 500,
+        startDuration: 120,
+        attack: 2
+      }
+    ]
+  }
 ]
 
 
