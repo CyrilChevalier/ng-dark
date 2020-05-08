@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DarkBattleComponent } from './dark-battle.component';
+import { BattleLayoutComponent } from './battle-layout.component';
 
-describe('DarkBattleComponent', () => {
-  let component: DarkBattleComponent;
-  let fixture: ComponentFixture<DarkBattleComponent>;
+describe('BattleLayoutComponent', () => {
+  let component: BattleLayoutComponent;
+  let fixture: ComponentFixture<BattleLayoutComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DarkBattleComponent ]
+      declarations: [ BattleLayoutComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DarkBattleComponent);
+    fixture = TestBed.createComponent(BattleLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

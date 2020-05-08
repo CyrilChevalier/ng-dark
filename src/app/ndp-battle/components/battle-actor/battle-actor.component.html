@@ -1,0 +1,28 @@
+<div class="container-fluid acteur mb-1">
+  <div class="row acteur-titre">
+    <div class="col-12">
+      {{acteur.nom}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      Points de vie :
+    </div>
+    <div class="col-2">
+      {{acteur.pdv}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      Endurance :
+    </div>
+    <div class="col-2">
+      {{acteur.endurance}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <button *ngFor="let action of acteur.actions" type="button" class="btn btn-primary mr-1" (click)="action.agit()">{{action.nom}}</button>
+    </div>
+  </div>
+</div>
