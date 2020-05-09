@@ -17,12 +17,12 @@
       Endurance :
     </div>
     <div class="col-2">
-      {{acteur.endurance}}
+      {{acteur.endurance.currentValue}}
     </div>
   </div>
   <div class="row">
     <div class="col-12">
-      <button *ngFor="let action of acteur.actions" type="button" class="btn btn-primary mr-1" (click)="action.agit()">{{action.nom}}</button>
+      <button *ngFor="let action of acteur.actions" type="button" class="btn btn-primary mr-1" (click)="action.agit()" [disabled]="!action.condition()">{{action.nom}}</button>
     </div>
   </div>
 </div>

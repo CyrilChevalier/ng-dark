@@ -1,14 +1,15 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BattleLayoutComponent } from './components/battle-layout/battle-layout.component';
+import { NgModule } from '@angular/core';
+
+import { SharedModule } from '../shared/shared.module';
 import { BattleActorComponent } from './components/battle-actor/battle-actor.component';
-
-
+import { BattleLayoutComponent } from './components/battle-layout/battle-layout.component';
 
 @NgModule({
   declarations: [BattleLayoutComponent, BattleActorComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ]
 })
 export class NdpBattleModule { }
